@@ -1,0 +1,65 @@
+/* styles.css */
+
+/* Apply max-width to the main element */
+main {
+    max-width: 840px;
+  }
+  
+  /* Style the aside element */
+  aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Style the image inside the aside */
+  aside img {
+    width: 200px;
+    height: auto;
+  }
+  
+  /* Reset padding for all paragraphs */
+  p {
+    padding: 0;
+  }
+  
+  /* Style the footer element */
+  footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+  }
+  
+  /* Style the menu */
+nav {
+    margin-top: 20px; /* Add space between aside and menu */
+  }
+  
+  nav ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline-block; /* Display menu items horizontally */
+    margin-right: 10px; /* Add space between menu items */
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333333;
+    padding: 5px 10px;
+    border: 1px solid #333; /* Add border to menu items */
+    border-radius: 5px; /* Add border radius to menu items */
+    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+  }
+  
+  nav a:hover {
+    background-color: #333333;
+    color: #ffffff;
+  }
