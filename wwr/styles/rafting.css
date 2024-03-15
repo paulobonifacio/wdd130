@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #8ec3e0;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+article, section {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+.sociallinks a {
+    text-decoration: none;
+}
+
+.sociallinks img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+}
+
+/* Especificando estilos para o div.hero e seus conteúdos */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
+/* Float para a imagem dentro do article */
+article img {
+    float: right;
+    margin-left: 20px;
+}
+
+/* Removendo sublinhado dos links de mídia social */
+.sociallinks img {
+    filter: brightness(0) invert(1);
+}
+
+/* Style*/
+p {
+    color: var(--text-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 0.9em;
+    }
+}
