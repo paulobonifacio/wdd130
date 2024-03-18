@@ -68,9 +68,9 @@ footer {
 }
 
 .image-row img {
-    width: calc(25% - 20px);
+    width: calc(25% - 20px); 
     height: auto;
-    margin: 10px; 
+    margin: 10px;
 }
 
 @media (max-width: 768px) {
@@ -90,5 +90,18 @@ footer {
     .image-row img {
         width: auto; 
         margin-bottom: 15px; 
+    }
+
+
+    .history-content {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        text-align: justify; 
+        gap: 20px; 
+    }
+    
+    .history-image {
+        width: 200px; 
     }
 }
