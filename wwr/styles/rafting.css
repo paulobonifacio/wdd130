@@ -1,83 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Rafting Company</title>
-    <meta name="description" content="The rafting site plan includes the site purpose, the target audience, branding information, and a style guide for the course website project.">
-    <meta name="author" content="Paulo Bonifacio">
-    <link rel="stylesheet" href="styles/rafting.css">
-</head>
-<body>
-    <header>
-        <img src="images/downriver.png" alt="Rafting Company Logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <img src="images/hero-image.jpg" alt="Rafting Adventure">
-            <div>
-                <h1>Rafting Company Adventure Consultants</h1>
-                <p>Venture into the wild waters with Rafting Company Adventure Consultants, your definitive guide to unforgettable rafting experiences. 
-                   Our passion is to turn every river trip into an epic adventure you'll remember for a lifetime. Situated in the heart of stunning landscapes, 
-                   our company doesn't just offer rafting trips; we create memories full of adrenaline, laughter and the incomparable beauty of the wilderness.</p>
-            </div>
-        </section>
-        <article>
-            <section>
-                <h2>History</h2>
-                <div class="history-content">
-                    <p class="text-side text-left">Adventure Consultants is the result of a group of friends' unwavering passion for adventure and nature.
-                        Each of them had a story of fascination with the rapids, the vertiginous descents and the feeling of freedom that only rafting can offer.
-                        United by the desire to share this passion, they decided to create a company that not only offered rafting trips, but transformative experiences.
-                    </p>
-                    <img src="images/history-image.jpeg" alt="Centro da História" class="history-image">
-                    <p class="text-side text-right">They wanted every person who paddled with them to feel the same thrill and deep connection with nature that led them down this path.
-                        Thus, Rafting Company Adventure Consultants became more than a company; it became a family, dedicated to unforgettable adventures and the preservation of the wild rivers they love so much
-                    </p>
-                </div>
-            </section>            
-            <section class="image-gallery">
-                <h2>Adventure Awaits You!</h2>
-                <div class="image-row">
-                <figure>
-                    <img src="images/rafting1.jpg" alt="Rafting 1">
-                    <figcaption>Los Dientes del Diablo</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting2.jpg" alt="Rafting 2">
-                    <figcaption>Big Mallard</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting3.jpg" alt="Rafting 3">
-                    <figcaption>Half Day Adventure</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting4.jpg" alt="Rafting 4">
-                    <figcaption>Iguacu falls</figcaption>
-                </figure>
-                </div>
-            </section>
-        </article>
-    </main>
-    <footer>
-        <p>&copy; 2024 Rafting Adventure Consultants. All rights reserved.</p>
-        <nav class="sociallinks">
-            <a href="https://facebook.com">
-                <img src="images/facebook.webp" alt="Facebook">
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter.webp" alt="Twitter">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.webp" alt="Instagram">
-            </a>
-        </nav>
-    </footer>
-</body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: rgb(142, 195, 224);
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+nav a {
+    text-decoration: none;
+    color: white; 
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+.hero img, .intro img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+article, section {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: white; 
+}
+
+.sociallinks a {
+    text-decoration: none;
+}
+
+.sociallinks img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+    filter: none; 
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.image-gallery figure {
+    width: 48%; 
+    margin: 1%; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-gallery img {
+    width: 100%; 
+    height: auto; 
+}
+
+.image-gallery figcaption {
+    margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+    .image-gallery figure {
+        width: calc(25% - 20px);
+        margin: 10px;
+    }
+
+    .hero h1, .intro h1 {
+        font-size: 1.5em;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 0.9em;
+    }
+
+    .image-row img {
+        margin-bottom: 15px;
+    }
+}
+
+.history-content {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: justify; 
+    gap: 20px; 
+}
+
+.history-image {
+    width: 200px; 
+    height: auto;
+}
