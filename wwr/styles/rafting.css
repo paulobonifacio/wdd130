@@ -3,12 +3,12 @@
 :root {
     --primary-color: #007bff;
     --secondary-color: #6c757d;
-    --background-color: #8ec3e0;
+    --background-color: rgb(142, 195, 224);
     --text-color: #333;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
     margin: 0;
@@ -16,20 +16,22 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: center;
     align-items: center;
     padding: 20px;
+    background-color: var(--background-color);
 }
 
 nav a {
     text-decoration: none;
-    color: var(--text-color);
+    color: white; 
     margin: 0 20px;
     font-size: 18px;
 }
 
-.hero img {
+.hero img, .intro img {
     display: block;
     width: 100%;
     height: auto;
@@ -39,12 +41,16 @@ article, section {
     margin: 20px;
     padding: 20px;
     border-radius: 8px;
+    background-color: white; 
 }
 
 footer {
     text-align: center;
     padding: 20px;
+    background-color: rgb(142, 195, 224);
+    color: white; 
 }
+
 .sociallinks a {
     text-decoration: none;
 }
@@ -53,47 +59,36 @@ footer {
     width: 24px;
     height: 24px;
     margin: 0 5px;
+    filter: none; 
 }
 
-/* Especificando estilos para o div.hero e seus conteúdos */
-.hero {
-    position: relative;
-    text-align: center;
-    color: #ffffff;
+.image-row {
+    display: flex;
+    justify-content: space-between; 
 }
 
-.hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2em;
+.image-row img {
+    width: calc(25% - 20px);
+    height: auto;
+    margin: 10px; 
 }
 
-/* Float para a imagem dentro do article */
-article img {
-    float: right;
-    margin-left: 20px;
-}
-
-/* Removendo sublinhado dos links de mídia social */
-.sociallinks img {
-    filter: brightness(0) invert(1);
-}
-
-/* Style*/
-p {
-    color: var(--text-color);
-}
-
-/* Responsive */
 @media (max-width: 768px) {
-    .hero h1 {
+    .hero h1, .intro h1 {
         font-size: 1.5em;
     }
 
     nav a {
         margin: 0 8px;
         font-size: 0.9em;
+    }
+
+    .image-row {
+        flex-direction: column; 
+    }
+
+    .image-row img {
+        width: auto; 
+        margin-bottom: 15px; 
     }
 }
