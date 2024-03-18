@@ -103,6 +103,7 @@ footer {
 
     .image-row img {
         margin-bottom: 15px;
+        border-radius: 10%;
     }
 }
 
@@ -115,6 +116,7 @@ footer {
 }
 
 .history-image {
-    width: 200px; 
+    width: 300px; 
     height: auto;
+    border-radius: 50%;
 }
