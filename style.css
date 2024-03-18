@@ -1,11 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
 nav {
-    background-color: grey;
+    background-color: steelblue;
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
@@ -24,11 +40,9 @@ nav a {
 h1 {
     color: steelblue;
     padding-left: 18px;
-    margin-bottom: 4px;
+    margin-bottom: 0px;
     border-bottom: 1px solid steelblue;
 }
-
-
 
 main {
     margin: 1rem;
@@ -36,13 +50,13 @@ main {
 }
 
 main img {
-    width: 250px;
+    width: 149px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
-    margin-top: 16px;
+    margin-top: 0px;
     margin-left: 16px;
     margin-bottom: 8px;
 }
@@ -54,7 +68,7 @@ p {
 }
 
 aside {
-    width: 25rem;
+    width: 20rem;
     text-align: center;
     position: relative;
     grid-column: 1/2;
@@ -67,16 +81,15 @@ aside img {
 }
 
 aside h2 {
-  position: absolute;
-  top: 20px;
-  left: 140px;
+    top: 18px;
+    left: 96px;
+    position: absolute;
 }
 
 footer {
     margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
-    max-width: 840px;
 }
 
 /* Class Selectors */
@@ -87,4 +100,9 @@ footer {
     background-color: #ddd;
     color: #000;
     padding-left: 22px;
+}
+
+.heart {
+    color: red;
+    font-weight: bolder;
 }
