@@ -122,4 +122,9 @@ footer {
         width: calc(25% - 20px);
         margin: 10px;
     }
+    .gmap_iframe {
+        border: 0; 
+        width: 600px; 
+        height: 400px; 
+    }
 }
