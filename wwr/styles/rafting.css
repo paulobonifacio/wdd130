@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
-    --primary-color: #007bff;
+    --primary-color: rgb(142, 195, 224);
     --secondary-color: #6c757d;
     --background-color: rgb(142, 195, 224);
     --text-color: #333;
@@ -83,23 +83,6 @@ nav a {
     text-align: left;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: var(--background-color);
-    color: black;
-}
-
-.sociallinks a {
-    text-decoration: none;
-}
-
-.sociallinks img {
-    width: 24px;
-    height: 24px;
-    margin: 0 5px;
-}
-
 .image-row {
     display: flex;
     flex-wrap: wrap;
@@ -136,18 +119,35 @@ footer {
         height: 400px;
     }
 
-    .sociallinks {
+    footer {
         display: flex;
-        justify-content: center; 
-    }
-    
-    .sociallinks a {
+        justify-content: flex-end;
+        align-items: center;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        padding: 10px;
+      }
+      
+      footer p {
+        flex: 1;
+        margin: 0;
+      }
+      
+      footer a {
         text-decoration: none;
-    }
-    
-    .sociallinks img {
-        width: 24px;
-        height: 24px;
-        margin: 0 5px;
-    }
+        color: var(--nav-link-color);
+      }
+      .sociallinks {
+        display: flex;
+        gap: 10px;
+      }
+      
+      .sociallinks a {
+        text-decoration: none;
+      }
+      
+      .sociallinks img {
+        width: 30px;
+        height: auto;
+      }
 }
