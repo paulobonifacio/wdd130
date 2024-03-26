@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: rgb(142, 195, 224);
-    --secondary-color: #black;
+    --secondary-color: #6c757d;
     --background-color: rgb(142, 195, 224);
     --text-color: #333;
 }
@@ -90,10 +90,12 @@ nav a {
 }
 
 .image-gallery figure {
-    width: 18%; 
+    width: 48%;
     margin: 1%;
     text-align: center;
-    display: inline-block; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .image-gallery img {
@@ -101,9 +103,13 @@ nav a {
     height: auto;
 }
 
+.image-gallery figcaption {
+    margin-top: 8px;
+}
+
 @media (min-width: 768px) {
     .image-gallery figure {
-        width: calc(20% - 20px); 
+        width: calc(25% - 20px);
         margin: 10px;
     }
 
@@ -120,6 +126,7 @@ nav a {
         background-color: var(--primary-color);
         color: var(--secondary-color);
         padding: 10px;
+
       }
       
       footer p {
