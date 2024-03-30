@@ -113,12 +113,6 @@ nav a {
         margin: 10px;
     }
 
-    .gmap_iframe {
-        border: 0;
-        width: 600px;
-        height: 400px;
-    }
-
     footer {
         display: flex;
         justify-content: flex-end;
