@@ -150,10 +150,12 @@ nav a {
       /*TRIPS SECTION*/
 .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
     gap: 16px;
+    align-content:center;
+    flex-direction: row;
   }
   
   .card {
